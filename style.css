@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: url(img/lions.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-header{
+    background: grey;
+    padding: 60px 40px;
+}
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(120deg,rgb(170, 23, 23),rgb(36, 24, 26));
+    margin: 0;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+@keyframes animated-gradient{
+    25%{
+    background-position: left bottom;    
+    }
+    50%{
+    background-position: right bottom;
+    }
+    75%{
+    background-position: right top;
+    }
+    100%{
+    background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.name{
+    color: gold;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.desc{
+    font-size: 25px;    
+    color: rgb(85, 5, 95);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.social-media a{
+    color: rgb(200, 19, 64);
+    width: 56px;
+    font-size: 25px;
+    transition: .3s transform linear;
+}
+.social-media a:hover{
+    color: blue;
+}
+
+h1{
+    padding: 12px 50px;
+    color: orchid sienna;
+    border-radius: 6px;
+    margin-top: 16px ;
+    transition: .3s linear;
+}
+h1 :hover{
+    background: orchid;
+    color: silver;
+}
+.card-footer{
+    background: snow;
+    padding: 60px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:firebrick;
+}
+.item span{
+    display: block;
+    color: rgb(61, 7, 7);
+    font-size: 30px;
+}
+.border{
+    width: 1px;
+    height: 40px;
+    background: black;
+}
+#first,#second{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+}
+
+
